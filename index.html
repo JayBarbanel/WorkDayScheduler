@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Work Day Scheduler</title>
 </head>
 
@@ -19,7 +19,30 @@
         <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+
         <!-- Timeblocks go here -->
+        <div id="9" class="row time-block">
+            <div class="col-md-1 hour align-items-center row">9am</div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1" data-time="9"></textarea>
+            <i class="fas fa-save"></i>
+            </button>
+        </div>
+        <div id="10" class="row time-block">
+            <div class="col-md-1 hour align-items-center row">10am</div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1" data-time="10"></textarea>
+            <i class="fas fa-save"></i>
+            </button>
+        </div>
+        <div id="11" class="row time-block">
+            <div class="col-md-1 hour align-items-center row">11am</div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1" data-time="11"></textarea>
+            <i class="fas fa-save"></i>
+            </button>
+        </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
