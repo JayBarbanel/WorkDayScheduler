@@ -11,7 +11,7 @@ $(document).ready(function() {
         localStorage.setItem(time, value);
     });
 
-    // Setting up date and time
+    // date and time
     $('#currentDay').text(moment());
 
     // Update seconds
@@ -22,7 +22,7 @@ $(document).ready(function() {
     displayTodaysDate();
 
     function displayTodaysDate() {
-        // Display date at top of page in this format
+
         currentDate.text(moment().format('dddd, MMMM Do YYYY, h:mm:ss a'));
     }
     // Store hours into an array
@@ -37,16 +37,21 @@ $(document).ready(function() {
     }
     console.log(timeArray);
 
+
+    function ResetCal() {
+        localStorage.clear()
+        location.reload()
+    }
+
+    $(".clearcal").on("click", ResetCal);
+
+
     // Background colors
     function setColors() {
         const currentHr = moment().hours();
         console.log(currentHr);
-        // console.log("currentHr", currentHr)
-        // console.log(typeof currentHr)
         $('.time-block').each(function() {
             const currentId = $(this).attr('id');
-            // console.log("currentId", currentId)
-            // console.log(typeof currentId)
             console.log(currentHr > currentId);
             if (currentHr > currentId) {
                 $(this).addClass('past');
@@ -84,7 +89,7 @@ $(document).ready(function() {
             .children('.description')
             .text(userInput12);
 
-        const userInput13 = localStorage.getItem('1');
+        const userInput13 = localStorage.getItem('13');
         $('#13')
             .children('.description')
             .text(userInput13);
