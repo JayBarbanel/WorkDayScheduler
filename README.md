@@ -4,7 +4,7 @@ The point of this was to created a day planner, where you can see a full work da
 
 
 
->>>>>>> ce875828c75633be29210b7ec3ffcac8bc31a196
+
 # Links 
 
 https://jaybarbanel.github.io/WorkDayScheduler/
